@@ -5,10 +5,8 @@
 /* Write a program that prints the alphabet in lowercase, followed by a new line*/
 int main(void){
     char ch;
-     char new_ch;
-    for(ch = 'A';ch <='Z';ch++){
-        new_ch = tolower(ch);
-        putchar(new_ch);
+    for(ch = 'a';ch <='z';ch++){
+        putchar(ch);
     }
     putchar('\n');
     return(0);

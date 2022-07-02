@@ -6,10 +6,8 @@
 int main(void){
     char ch;
     char lower_ch;
-    char upper_ch;
-    for (ch='A';ch<='Z';ch++){
-        lower_ch = tolower(ch);
-        putchar(lower_ch);
+    for (ch='a';ch<='z';ch++){
+        putchar(ch);
 
     }
     for (ch='A';ch<='Z';ch++){
