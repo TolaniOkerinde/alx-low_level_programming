@@ -2,7 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 /* more headers goes there */
-/* Write a program that prints the alphabet in lowercase, followed by a new line*/
+/**
+ *main - Prints the alphabet in lowercase
+ *
+ *Return: 0 if success
+ **/
 int main(void){
     char ch;
     for(ch = 'a';ch <='z';ch++){
