@@ -1,23 +1,22 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-/* Write a program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.*/
-int main(void){
-    char ch;
-    char lower_ch;
-    char upper_ch;
-    for (ch='A';ch<='Z';ch++){
-        if(ch=='E' || ch=='Q'){
-           continue;
-        }
-        else{
-        lower_ch = tolower(ch);
-        
-        putchar(lower_ch);
-        }
-            
-    }
-    putchar('\n');
-    return(0);
+/**
+ * main - main block
+ * Description: Get a random number and check its last digit, compare it with 5
+ * Return: 0
+ */
+int main(void)
+{
+	char c = 'a';
+
+	while (c <= 'z')
+	{
+		if (c != 'e' && c != 'q')
+		{
+			putchar(c);
+		}
+		c++;
+	}
+
+	putchar('\n');
+	return (0);
 }
