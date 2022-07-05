@@ -1,19 +1,19 @@
-#include <stdio.h>                                                                                  
+#include "main.h"
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	char *sh = "_putchar";
 
-/**                                                                                                 
- * Write a program that prints _putchar, followed by a new line                                                                        
- * Return: 0                                                                                        
- */                                                                                                 
-int main(void)                                                                                      
-{                                                                                                   
-        char value[] = "_putchar";                                                              
+	while (*sh)
+	{
+		_putchar(*sh);
+		sh++;
+	}
+	_putchar('\n');
 
-        for (int i = 0; value[i] != '\0'; i++)                                                          
-        {                                                                                           
-                printf("%c", value[i]);                                                             
-        }                                                                                           
-
-        printf("\n");                                                                               
-
-        return (0);                                                                                 
+	return (0);
 }
